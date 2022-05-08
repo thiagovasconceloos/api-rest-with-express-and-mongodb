@@ -7,7 +7,10 @@ const router = express.Router();
 
 router
  .get("/livros",livroController.listarLivros)
- .post("/livros",livroController.cadastrarLivros);
+ .get("/livros/:id",livroController.listarLivrosId)
+ .post("/livros",livroController.cadastrarLivros)
+ .put("/livros/:id",livroController.atualizarLivro)
+
 
 
 
