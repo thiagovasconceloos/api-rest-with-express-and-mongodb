@@ -10,6 +10,7 @@ router
  .get("/livros/:id",livroController.listarLivrosId)
  .post("/livros",livroController.cadastrarLivros)
  .put("/livros/:id",livroController.atualizarLivro)
+ .delete("/livros/:id",livroController.excluirLivro)
 
 
 
